@@ -11,7 +11,8 @@ public class GlobalDefaultExceptionHandler {
     private static final Logger logger = LoggerFactory.getLogger(GlobalDefaultExceptionHandler.class);
 
     @ExceptionHandler({
-            CategoryNotFoundByIdException.class
+            CategoryNotFoundByIdException.class,
+            PostNotFoundByIdException.class
     })
     public ResponseEntity<String> handleNotFoundException(Exception ex) {
         logger.warn("[NOT FOUND] {}", ex.getMessage());
