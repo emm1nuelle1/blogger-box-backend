@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/v1/categories")
+@RequestMapping({"/v1/categories", "/categories"})
 @Tag(name = "Category API", description = "Endpoints for categories")
 public class CategoryController {
 

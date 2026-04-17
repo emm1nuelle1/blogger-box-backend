@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/v1/posts")
+@RequestMapping({"/v1/posts", "/posts"})
 @Tag(name = "Post API", description = "Endpoints for posts")
 public class PostController {
 
